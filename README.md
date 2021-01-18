@@ -1,5 +1,5 @@
 # Shopify-Intern-Challenge
-### Website https://shopify-intern-challenge-la.herokuapp.com/
+#### Website: https://shopify-intern-challenge-la.herokuapp.com/
 
 This is my Shopify Intern Challenge submission, it is a web app the lets you search movies and add up to 5 to be nominated
 It uses Omdbapi.com to retrieve movie data

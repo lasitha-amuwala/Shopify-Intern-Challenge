@@ -23,24 +23,8 @@ function getMovies(query) {
 				//console.log(title)
 				let poster = movie.Poster.replace('300.jpg', '1000.jpg');
 				resultList += '<li class="list-item"><div class="movie-tile">';
-				resultList +=
-					'<img class="poster" src=' +
-					poster +
-					'><div class="layer" ><p class="movie-title">' +
-					movie.Title +
-					' (' +
-					movie.Year +
-					')</p>';
-				resultList +=
-					'<div class="my-list"><button class="btn btn-primary" onclick="checkNominated(' +
-					`'` +
-					title +
-					`'` +
-					',' +
-					`'` +
-					poster +
-					`'` +
-					')" id="nominate-btn" type="button">Nominate</button></div></div></li>';
+				resultList +='<img class="poster" src=' +poster +'><div class="layer" ><p class="movie-title">' +movie.Title +' (' +movie.Year +')</p>';
+				resultList +='<div class="my-list"><button class="btn btn-primary" onclick="checkNominated(' + `'` + title + `'` + ',' + `'` +poster + `'` + ')" id="nominate-btn" type="button">Nominate</button></div></div></li>';
 			});
 			resultList += '</ul>';
 			//console.log(resultList);
@@ -60,15 +44,7 @@ function loadNominations() {
 		nominations = nominations.split(',');
 		$('#my-nominations').html('');
 		nominations.forEach((item) => {
-			$('#my-nominations').append(
-				'<a href="#" class="list-group-item list-group-item-action">' +
-					item +
-					'</a><button type="button" class="btn btn-danger" onclick="removeNomination(' +
-					`'` +
-					item +
-					`'` +
-					')">remove</button>'
-			);
+			$('#my-nominations').append( '<a href="#" class="list-group-item list-group-item-action">' + item + '</a><button type="button" class="btn btn-danger" onclick="removeNomination(' + `'` + item + `'` + ')">Remove</button>');
 		});
 	} else {
 		$('#my-nominations').html('');

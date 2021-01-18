@@ -1,0 +1,26 @@
+{
+  "name": "shopify-intern-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devStart":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lasitha-amuwala/Shopify-Intern-Challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lasitha-amuwala/Shopify-Intern-Challenge/issues"
+  },
+  "homepage": "https://github.com/lasitha-amuwala/Shopify-Intern-Challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -7,7 +7,7 @@ function setPosterHeight() {
 }
 
 function getMovies(query) {
-	let endpoint = 'http://www.omdbapi.com/';
+	let endpoint = 'https://www.omdbapi.com/';
 	let apiKey = 'f336ee65';
 
 	let title = query ? query : $('#movie-input').val();
